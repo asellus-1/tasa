@@ -197,7 +197,7 @@ export default function ConfiguratorPanel({
           </span>
         </div>
 
-        <div className="grid grid-cols-10 text-center text-[13px] sm:text-[14px]">
+        <div className="grid grid-cols-10 text-center text-[11px] sm:text-[14px]">
           {COLORS.map((col) => {
             const isSelected = color === col;
             return (
@@ -205,7 +205,7 @@ export default function ConfiguratorPanel({
                 key={col}
                 type="button"
                 onClick={() => setColor(col)}
-                className={`transition-colors cursor-pointer py-1.5 ${isSelected
+                className={`transition-colors cursor-pointer py-1.5 px-0.5 truncate ${isSelected
                   ? 'text-[#111111] font-medium border-b border-[#111111]'
                   : 'text-[#888884] hover:text-[#111111]'
                   }`}
@@ -223,12 +223,12 @@ export default function ConfiguratorPanel({
           <span className="uppercase tracking-[0.16em] text-[#888884] font-medium">
             Clarity
           </span>
-          <span className="text-[#888884] font-normal">
+          <span className="text-[#888884] font-normal truncate ml-2">
             {clarityDesc}
           </span>
         </div>
 
-        <div className="grid grid-cols-8 text-center text-[11.5px] sm:text-[13px]">
+        <div className="grid grid-cols-8 text-center text-[10px] sm:text-[12.5px]">
           {CLARITIES.map((c) => {
             const isSelected = clarity === c.id;
             return (
@@ -236,7 +236,7 @@ export default function ConfiguratorPanel({
                 key={c.id}
                 type="button"
                 onClick={() => setClarity(c.id)}
-                className={`transition-colors cursor-pointer py-1.5 ${isSelected
+                className={`transition-colors cursor-pointer py-1.5 px-0.5 truncate ${isSelected
                   ? 'text-[#111111] font-medium border-b border-[#111111]'
                   : 'text-[#888884] hover:text-[#111111]'
                   }`}

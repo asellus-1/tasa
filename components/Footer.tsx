@@ -13,7 +13,7 @@ interface FooterProps {
 
 export default function Footer({ onOpenConsultation }: FooterProps) {
   const pathname = usePathname();
-  const isProductPage = pathname === '/';
+  const isProductPage = pathname === '/vault';
   return (
     <footer className="w-full border-t border-[#EAEAE7] bg-[#FAF9F6] text-[#111111]">
       {/* Top Value Assurance Ribbon */}
@@ -93,8 +93,8 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
                 onClick={onOpenConsultation}
                 className="inline-flex items-center gap-2 text-[12px] font-medium text-[#111111] hover:text-[#555552] border-b border-[#111111] pb-0.5 tracking-wider transition-colors"
               >
-                <span>Speak with a Diamond Concierge</span>
-                <span aria-hidden="true">;</span>
+                <span>Get Assistance</span>
+                <span aria-hidden="true">&rarr;</span>
               </button>
             </div>
           </div>
@@ -104,27 +104,27 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
             <p className="text-[12px] uppercase font-semibold tracking-[0.1em] text-[#111111]">The Vault</p>
             <ul className="space-y-2 text-[13px] text-[#6E6E6A]">
               <li>
-                <Link href="/" className="hover:text-[#111111] transition-colors">
+                <Link href="/vault" className="hover:text-[#111111] transition-colors">
                   Interactive Configurator
                 </Link>
               </li>
               <li>
-                <Link href="/?shape=round" className="hover:text-[#111111] transition-colors">
+                <Link href="/vault?shape=round" className="hover:text-[#111111] transition-colors">
                   Round Brilliant
                 </Link>
               </li>
               <li>
-                <Link href="/?shape=oval" className="hover:text-[#111111] transition-colors">
+                <Link href="/vault?shape=oval" className="hover:text-[#111111] transition-colors">
                   Oval Cut
                 </Link>
               </li>
               <li>
-                <Link href="/?shape=emerald" className="hover:text-[#111111] transition-colors">
+                <Link href="/vault?shape=emerald" className="hover:text-[#111111] transition-colors">
                   Emerald Cut
                 </Link>
               </li>
               <li>
-                <Link href="/?shape=pear" className="hover:text-[#111111] transition-colors">
+                <Link href="/vault?shape=pear" className="hover:text-[#111111] transition-colors">
                   Pear &amp; Radiant
                 </Link>
               </li>
@@ -142,7 +142,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
               </li>
               <li>
                 <Link href="/custom-jewelry" className="hover:text-[#111111] transition-colors">
-                  Custom Jewelry (Coming Soon)
+                  Custom Jewelry Atelier
                 </Link>
               </li>
               <li>

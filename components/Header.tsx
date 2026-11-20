@@ -27,7 +27,8 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
   });
 
   const navLinks = [
-    { label: 'The Vault', href: '/' },
+    { label: 'Home', href: '/' },
+    { label: 'The Vault', href: '/vault' },
     { label: 'The 4Cs Guide', href: '/education' },
     { label: 'Custom Jewelry', href: '/custom-jewelry' },
     { label: 'About', href: '/about' },
@@ -108,7 +109,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
             onClick={onOpenConsultation}
             className="text-[12px] sm:text-[13px] font-medium text-[#111111] hover:text-[#555552] active:scale-[0.98] border-b border-[#111111] pb-0.5 transition-all cursor-pointer tracking-wide hidden sm:inline-block"
           >
-            Get a Free Consultation
+            Get Assistance
           </button>
 
           {/* Mobile Hamburger Toggle with 44px touch target */}
@@ -187,7 +188,7 @@ export default function Header({ onOpenConsultation }: HeaderProps) {
                   }}
                   className="w-full text-center py-3.5 px-4 bg-[#111111] text-white text-[13.5px] font-medium tracking-wide active:scale-[0.98] transition-transform"
                 >
-                  Get a Free Consultation
+                  Get Assistance
                 </button>
               </div>
             </div>
